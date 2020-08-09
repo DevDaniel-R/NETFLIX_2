@@ -46,6 +46,8 @@ if (isset($_POST["submitButton"])) {
 
       </form>
 
+      <a href="index.php" class="signInMessage">Already have an account? Sign in here!</a>
+
     </div>
   </div>
 
