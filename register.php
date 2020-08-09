@@ -1,3 +1,9 @@
+<?php
+if (isset($_POST["submitButton"])) {
+  echo "Form was submitted";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +20,12 @@
   <div class="signInContainer">
     <div class="column">
 
+      <div class="header">
+        <img src="assets/images/movieflex.png" title="Logo" alt="Site Logo" />
+        <h3>Sign Up</h3>
+        <span>to continue to Movieflix</span>
+      </div>
+
       <form method="POST">
 
         <input type="text" name="firstName" placeholder="first name" required>
@@ -28,9 +40,9 @@
 
         <input type="password" name="password" placeholder="password" required>
 
-        <input type="password" name="password2" placeholder="password" required>
+        <input type="password" name="password2" placeholder="Comfirm password" required>
 
-        <input type="submit" name="submitPassword" value="SUBMIT" required>
+        <input type="submit" name="submitButton" value="SUBMIT" required>
 
       </form>
 
